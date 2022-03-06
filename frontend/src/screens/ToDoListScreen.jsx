@@ -1,12 +1,11 @@
 import React, { useState } from "react";
+import "./ToDoListScreen.css";
 import Task from "../components/Task";
+import { listStarter } from "../data";
 
 function App() {
   const [userInput, setUserInput] = useState("");
-  const [tasks, setTasks] = useState([
-    "Type the task you want to add",
-    "Click the add button to add the task",
-  ]);
+  const [tasks, setTasks] = useState(listStarter);
 
   const date = new Date();
   const today = date.getDate();
@@ -41,8 +40,6 @@ function App() {
   function textHandler(event) {
     setUserInput(event.target.value);
   }
-
-  let color = "#8f9ee2";
 
   function submitHandler(event) {
     setNumTasks(tasks.length + 1);
@@ -111,7 +108,6 @@ function App() {
                   onFinished={deleteHandler}
                   key={index}
                   text={task}
-                  color={color}
                 />
               );
             })
