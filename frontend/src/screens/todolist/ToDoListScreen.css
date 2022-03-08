@@ -110,7 +110,7 @@ hr {
 }
 
 .btn:hover .btnText {
-  transform: scale(1.07);
+  transform: scale(0.8);
 }
 
 .error {

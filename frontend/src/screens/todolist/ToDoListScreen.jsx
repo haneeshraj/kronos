@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ToDoListScreen.css";
-import Task from "../components/Task";
-import { listStarter } from "../data";
+import Task from "../../components/Task";
+import { listStarter } from "../../data";
 
 function App() {
   const [userInput, setUserInput] = useState("");
