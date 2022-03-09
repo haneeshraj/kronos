@@ -10,7 +10,7 @@ function Task({ text, id, onFinished, color }) {
           return onFinished(id);
         }}
       >
-        <div className='btnText'>{text}</div>
+        <div className='todo-btnText'>{text}</div>
       </div>
     </>
   );

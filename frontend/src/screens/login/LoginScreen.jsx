@@ -16,17 +16,17 @@ const LoginScreen = () => {
   };
 
   return (
-    <div className='form-container'>
+    <div className='login-container'>
       <h1>Kronos</h1>
-      <div className='form-box'>
+      <div className='login-box'>
         <h3>Sign In</h3>
-        <form className='form-form' onSubmit={submitHandler}>
+        <form className='login-form' onSubmit={submitHandler}>
           <label htmlFor='email'>Email</label>
           <input
             autoComplete='off'
             placeholder='Enter Email'
             type='email'
-            id='form-email'
+            id='login-email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             name='email'
@@ -36,15 +36,15 @@ const LoginScreen = () => {
             placeholder='Enter Password'
             autoComplete='off'
             type='password'
-            id='form-password'
+            id='login-password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             name='password'
           />
-          <button id='form-btn' type='submit'>
+          <button id='login-btn' type='submit'>
             Login
           </button>
-          <div className='form-bottom-text'>
+          <div className='login-bottom-text'>
             New user?{" "}
             <Link to={"/register"} style={{ color: "black" }}>
               <strong>Register</strong>

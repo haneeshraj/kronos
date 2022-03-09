@@ -7,14 +7,14 @@ html {
   height: 100%;
 }
 
-.center {
+.todo-center {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.box {
+.todo-box {
   width: 55vh;
   height: fit-content;
   padding: 3vh 5vh;
@@ -25,33 +25,33 @@ html {
   -moz-box-shadow: 0px 0px 36px -10px rgba(0, 0, 0, 0.49);
 }
 
-.detailsSection h2 {
+.todo-detailsSection h2 {
   margin: 0;
   font-family: "Nunito", sans-serif;
   color: #ec7777;
   margin-bottom: 1vh;
 }
 
-#month {
+#todo-month {
   font-family: "Nunito", sans-serif;
   font-weight: 300;
   color: #808080;
 }
 
-#numTasks {
+#todo-numTasks {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   color: #808080;
   float: right;
 }
 
-hr {
+.todo-hr {
   border-style: solid;
   border-width: 0 0 1px 0;
   border-color: rgba(0, 0, 0, 0.1);
 }
 
-#taskInput {
+#todo-taskInput {
   border-radius: 7px;
   padding: 10px 12px;
   border: 0;
@@ -63,18 +63,18 @@ hr {
   -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
 }
 
-#taskInput::placeholder {
+#todo-taskInput::placeholder {
   font-family: "Nunito", sans-serif;
   font-weight: 500;
   font-size: small;
 }
 
-#taskInput:focus-visible {
+#todo-taskInput:focus-visible {
   outline-style: 0;
   outline-width: 0;
 }
 
-.btn {
+.todo-btn {
   background: rgb(254, 102, 102);
   background: linear-gradient(
     60deg,
@@ -92,7 +92,7 @@ hr {
   transition: all 200ms cubic-bezier(0, 1.1, 0.67, 1.1);
 }
 
-.btn:hover {
+.todo-btn:hover {
   background: rgb(254, 102, 102);
   background: linear-gradient(
     240deg,
@@ -105,22 +105,22 @@ hr {
   -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
 }
 
-.btnText {
+.todo-btnText {
   transition: all 200ms cubic-bezier(0, 1.1, 0.67, 1.1);
 }
 
-.btn:hover .btnText {
+.todo-btn:hover .btnText {
   transform: scale(0.8);
 }
 
-.error {
+.todo-error {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.error h2 {
+.todo-error h2 {
   font-family: "Nunito", sans-serif;
   text-align: center;
   background-color: #ebd15d;
@@ -131,32 +131,9 @@ hr {
   width: fit-content;
 }
 
-.error p {
+.todo-error p {
   margin: 0;
   font-family: "Nunito", sans-serif;
   font-weight: 100;
   text-align: center;
 }
-
-/* .task {
-  padding: 10px;
-  background-color: #fff;
-  margin: 20px 0;
-  text-align: center;
-  font-family: "Nunito", sans-serif;
-  font-size: medium;
-  border-radius: 8px;
-  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
-  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.156);
-  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
-  cursor: pointer;
-  transition: all 200ms;
-}
-
-.task:hover {
-  background-color: #8f9ee2;
-}
-
-.task:hover .btnText {
-  transform: scale(0.8);
-} */

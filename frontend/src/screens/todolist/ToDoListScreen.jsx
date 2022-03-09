@@ -58,9 +58,9 @@ function App() {
   }
   return (
     <>
-      <div className='center'>
-        <div className='box'>
-          <div className='detailsSection'>
+      <div className='todo-center'>
+        <div className='todo-box'>
+          <div className='todo-detailsSection'>
             <h2>
               {weekDays[date.getDay()]}, {`${today}`}
               {today === 1 || today === 21 || today === 31
@@ -71,30 +71,30 @@ function App() {
                 ? "rd"
                 : "th"}
             </h2>
-            <div className='container'>
-              <span id='month'>{months[date.getMonth()]}</span>
-              <span id='numTasks'>
+            <div className='todo-container'>
+              <span id='todo-month'>{months[date.getMonth()]}</span>
+              <span id='todo-numTasks'>
                 <strong>{numTasks}</strong> Tasks
               </span>
             </div>
           </div>
-          <hr />
+          <hr className='todo-hr' />
           <input
             type='text'
-            id='taskInput'
+            id='todo-taskInput'
             placeholder='Enter a task here'
             value={userInput}
             onChange={textHandler}
           />
           <div
-            className='btn'
+            className='todo-btn'
             onClick={userInput === "" ? undefined : submitHandler}
           >
-            <div className='btnText'>Add</div>
+            <div className='todo-btnText'>Add</div>
           </div>
-          <hr />
+          <hr className='todo-hr' />
           {numTasks === 0 ? (
-            <div className='error'>
+            <div className='todo-error'>
               <h2>Oops..</h2>
               <p>
                 You have no tasks. Make a new task by entering a task above!

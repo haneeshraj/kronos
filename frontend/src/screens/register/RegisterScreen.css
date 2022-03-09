@@ -4,7 +4,7 @@ html {
   font-family: "Nunito", sans-serif;
 }
 
-.form-container {
+.register-container {
   display: flex;
   position: relative;
   justify-content: center;
@@ -14,12 +14,12 @@ html {
   width: 100vw;
   bottom: 3vh;
 }
-.form-container h1 {
+.register-container h1 {
   font-size: 4rem;
   margin-top: 0;
 }
 
-.form-box {
+.register-box {
   background-color: #fff;
   padding: 1vh 13vh 5vh 13vh;
   border-radius: 20px;
@@ -27,9 +27,9 @@ html {
   -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.156);
   -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
 }
-#form-email,
-#form-password,
-#form-name {
+#register-email,
+#register-password,
+#register-name {
   display: block;
   margin-bottom: 3vh;
   border-radius: 7px;
@@ -42,14 +42,14 @@ html {
   transition: all 200ms;
 }
 
-#form-email[placeholder],
-#form-password[placeholder] {
+#register-email[placeholder],
+#register-password[placeholder] {
   font-family: "Nunito", sans-serif;
 }
 
-#form-email:focus-visible,
-#form-name:focus-visible,
-#form-password:focus-visible {
+#register-email:focus-visible,
+#register-name:focus-visible,
+#register-password:focus-visible {
   outline-style: 0;
   outline-width: 0;
   box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
@@ -64,13 +64,13 @@ label[for="name"] {
   margin: 0.4vw 0;
 }
 
-.form-box h3 {
+.register-box h3 {
   text-align: center;
   font-size: 1.3rem;
   margin-bottom: 2rem;
 }
 
-#form-btn {
+#register-btn {
   cursor: pointer;
   position: relative;
   background-color: #3886e6;
@@ -85,14 +85,27 @@ label[for="name"] {
   left: 3vw;
 }
 
-#form-btn:hover {
+#register-btn:hover {
   background-color: #65a0e7;
   transform: scale(1.1);
   box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
   -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.156);
   -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
 }
-#form-btn:active {
+#register-btn:active {
   background-color: #4fd87b;
   transform: scale(0.9);
+}
+
+.register-bottom-text {
+  display: block;
+  position: relative;
+  top: 1vh;
+  font-size: smaller;
+}
+
+#otp-text {
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 3vh 0;
 }
