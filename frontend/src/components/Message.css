@@ -27,7 +27,7 @@ body {
 }
 
 #message-box {
-  width: 550px;
+  width: 40vh;
   height: 50px;
   background-color: #62a1dc;
   display: flex;
