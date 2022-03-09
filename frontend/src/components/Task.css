@@ -21,11 +21,11 @@
   background-color: #7ae793;
 }
 
-.task:hover .btnText {
+.task:hover .todo-btnText {
   transform: scale(1.08);
 }
 
-.task:active .btnText {
+.task:active .todo-btnText {
   transform: scale(0.9);
   color: #fff;
 }
