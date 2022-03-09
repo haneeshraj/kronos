@@ -8,20 +8,15 @@ body {
   0% {
     bottom: 110vh;
   }
-  20% {
-    bottom: 90vh;
-  }
-  80% {
-    bottom: 90vh;
-  }
+
   100% {
-    bottom: 110vh;
+    bottom: 90vh;
   }
 }
 
 .message-container {
   position: absolute;
-  bottom: 110vh;
+  bottom: 90vh;
   left: 30vw;
   animation-duration: 5s;
   animation-name: slideIn;
