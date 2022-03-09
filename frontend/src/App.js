@@ -12,7 +12,6 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
         <Routes>
           <Route path='/' element={<HomeScreen />} />
           <Route path='/login' element={<LoginScreen />} />

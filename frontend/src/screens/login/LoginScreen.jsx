@@ -18,6 +18,9 @@ const LoginScreen = () => {
   return (
     <div className='login-container'>
       <h1>Kronos</h1>
+      <p style={{ margin: "0 0 4vh 0", color: "rgba(0,0,0,0.6)" }}>
+        "Kronos is a greek god of time" - Google
+      </p>
       <div className='login-box'>
         <h3>Sign In</h3>
         <form className='login-form' onSubmit={submitHandler}>

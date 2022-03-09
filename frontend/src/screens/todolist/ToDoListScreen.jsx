@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./ToDoListScreen.css";
 import Task from "../../components/Task";
 import { listStarter } from "../../data";
+import Navbar from "../../components/Navbar";
 
 function App() {
   const [userInput, setUserInput] = useState("");
@@ -58,6 +59,7 @@ function App() {
   }
   return (
     <>
+      <Navbar />
       <div className='todo-center'>
         <div className='todo-box'>
           <div className='todo-detailsSection'>

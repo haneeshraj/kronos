@@ -22,6 +22,9 @@ const LoginScreen = () => {
   return (
     <div className='register-container'>
       <h1>Kronos</h1>
+      <p style={{ margin: "0 0 4vh 0", color: "rgba(0,0,0,0.6)" }}>
+        "Kronos is a greek god of time" - Google
+      </p>
       <div className='register-box'>
         {showOtp ? (
           <>
