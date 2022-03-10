@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#tsms-heading {
+  font-size: 3rem;
+  margin: 3rem 0;
+}

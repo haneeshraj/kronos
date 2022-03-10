@@ -99,5 +99,6 @@ label[for="password"] {
   display: block;
   position: relative;
   top: 1vh;
+  width: fit-content;
   font-size: smaller;
 }

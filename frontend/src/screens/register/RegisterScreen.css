@@ -103,6 +103,7 @@ label[for="name"] {
   position: relative;
   top: 1vh;
   font-size: smaller;
+  width: fit-content;
 }
 
 #otp-text {
