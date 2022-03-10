@@ -33,8 +33,13 @@ const StickiesScreen = () => {
     );
   }
 
-  function addHandler(id) {
+  function addHandler() {
     setStickies([...stickies, defaultSticky]);
+  }
+
+  function editHandler(id) {
+    // NAVIGATE to StickiesEditScreen WITH ALL DATA and ID
+    console.log(id);
   }
 
   return (
@@ -53,6 +58,7 @@ const StickiesScreen = () => {
               content={content}
               title={title}
               onDelete={deleteHandler}
+              onEdit={editHandler}
             />
           );
         })}
