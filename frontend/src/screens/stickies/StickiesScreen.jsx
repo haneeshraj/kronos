@@ -10,22 +10,31 @@ const userName = "Haneesh";
 const StickiesScreen = () => {
   const [stickies, setStickies] = useState([
     {
-      title: "Testing Title 1",
+      title: "Edit Notes",
       content:
-        "Description one two three what the fuck ok pls work three what the fuckok pls work three what the fuck ok pls work three what the fuck ok plswork....ok pls work....ok pls work....ok pls work....ok p....",
+        "Click on the edit button and delete all the content and start taking notes!",
     },
     {
-      title: "Testing Title 2",
-      content:
-        "Description one two three what the fuck ok pls work three what the fuckok pls work three what the fuck ok pls work three what the fuck ok plswork....ok pls work....ok pls work....ok pls work....ok p....",
+      title: "Delete Notes",
+      content: "You can click on delete button to delete a note!",
     },
   ]);
+
+  const defaultSticky = {
+    title: "New Note",
+    content: "This is a template content notes.",
+  };
+
   function deleteHandler(id) {
     setStickies(
       stickies.filter((sticky, index) => {
         return index !== id;
       })
     );
+  }
+
+  function addHandler(id) {
+    setStickies([...stickies, defaultSticky]);
   }
 
   return (
@@ -48,7 +57,7 @@ const StickiesScreen = () => {
           );
         })}
       </div>
-      <div className='sticky-add-btn'>
+      <div className='sticky-add-btn' onClick={addHandler}>
         <i className='material-icons sticky-add-icon'>add</i>
       </div>
     </>
