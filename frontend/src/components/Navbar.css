@@ -100,7 +100,6 @@ body {
   color: #fff;
   pointer-events: none;
   position: fixed;
-  content: "testtext";
   left: 4rem;
   background-color: rgba(0, 0, 0, 0.256);
   font-size: 13px;

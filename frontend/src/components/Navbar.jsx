@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
@@ -8,13 +8,9 @@ const Navbar = () => {
     color: "#000",
   };
 
-  const [loggedIn, setLoggedIn] = useState(true); // DELETE THIS FROM HERE
   const logOutHandler = (e) => {
-    setLoggedIn(false);
+    console.log(false);
   };
-  const logInHandler = (e) => {
-    setLoggedIn(true);
-  }; // TILL HERE
 
   return (
     <>
@@ -58,27 +54,15 @@ const Navbar = () => {
             </div>
           </Link>
           <hr />
-          {loggedIn ? (
-            <div
-              className='nav-item'
-              aria-label='loggedIn'
-              id='nav-log-button'
-              onClick={logOutHandler}
-            >
-              <i className='material-icons nav-icon'>power</i>
-              <div className='nav-item-label'>Log Out</div>
-            </div>
-          ) : (
-            <div
-              className='nav-item'
-              aria-label='loggedOut'
-              id='nav-log-button'
-              onClick={logInHandler}
-            >
-              <i className='material-icons nav-icon'>dashboard</i>
-              <div className='nav-item-label'>Log In</div>
-            </div>
-          )}
+          <div
+            className='nav-item'
+            aria-label='loggedIn'
+            id='nav-log-button'
+            onClick={logOutHandler}
+          >
+            <i className='material-icons nav-icon'>power</i>
+            <div className='nav-item-label'>Log Out</div>
+          </div>
         </div>
       </div>
     </>

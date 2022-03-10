@@ -5,8 +5,7 @@ import ToDoListScreen from "../src/screens/todolist/ToDoListScreen";
 import LoginScreen from "../src/screens/login/LoginScreen";
 import RegisterScreen from "../src/screens/register/RegisterScreen";
 import HomeScreen from "./screens/home/HomeScreen";
-import Navbar from "./components/Navbar";
-import Message from "./components/Message";
+import ToDoMainScreen from "./screens/todolist/ToDoMainScreen";
 
 function App() {
   return (
@@ -17,7 +16,7 @@ function App() {
           <Route path='/login' element={<LoginScreen />} />
           <Route path='/register' element={<RegisterScreen />} />
           <Route path='/todolist' element={<ToDoListScreen />} />
-          <Route path='/test' element={<Message />} />
+          <Route path='/todolistms' element={<ToDoMainScreen />} />
         </Routes>
       </Router>
     </>

@@ -1,10 +1,84 @@
 body {
   margin: 0;
+}
+
+.tdms-header {
+  display: flex;
+  justify-content: center;
+  font-size: larger;
   height: 100%;
   width: 100%;
 }
 
-#tsms-heading {
-  font-size: 3rem;
-  margin: 3rem 0;
+.tdms-header h1 {
+  margin: 6vh;
+  font-size: 8vh;
+}
+
+.tdms-list-container {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+}
+
+.tdms-list-box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50vw;
+  flex-wrap: wrap;
+}
+
+.tdms-box {
+  margin: 1rem;
+  padding: 0.5rem 1.7rem;
+  border-radius: 7px;
+  cursor: pointer;
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.156);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+  background-color: rgba(245, 157, 90, 1);
+  color: #fff;
+  transition: all 200ms;
+}
+
+.tdms-box:hover {
+  color: #000;
+  background: #fff;
+}
+
+.tdms-add-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 3rem;
+  padding: 1rem;
+  bottom: 5vh;
+  right: 3vw;
+  transition: all 200ms cubic-bezier(0, 1.1, 0.67, 1.1);
+  background-color: #000000;
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.156);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.156);
+}
+
+.tdms-add-btn:hover {
+  background-color: #252525;
+}
+
+.tdms-add-icon {
+  color: #fff;
+  transition: all 200ms cubic-bezier(0, 1.1, 0.67, 1.1);
+}
+
+.tdms-add-btn:hover .tdms-add-icon {
+  transform: scale(1.3);
+}
+.tdms-add-btn:active {
+  background-color: #76df6d;
+  transform: scale(0.9);
 }
