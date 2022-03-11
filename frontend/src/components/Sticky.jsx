@@ -1,4 +1,5 @@
 import React from "react";
+import "./Sticky.css";
 
 const Sticky = ({ title, content, onDelete, id, onEdit }) => {
   return (

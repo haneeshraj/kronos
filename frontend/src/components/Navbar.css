@@ -55,6 +55,7 @@ body {
   margin: 0.5rem 0;
   display: flex;
   justify-content: center;
+  user-select: none;
   align-items: center;
   height: 40px;
   width: 40px;

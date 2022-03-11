@@ -41,12 +41,12 @@ const Navbar = () => {
               <div className='nav-item-label'>Pomodoro</div>
             </div>
           </Link>
-          <Link style={linkStyle} to='/diary'>
+          {/* <Link style={linkStyle} to='/diary'>
             <div className='nav-item' id='nav-diary'>
               <i className='material-icons nav-icon'>book</i>
               <div className='nav-item-label'>Diary</div>
             </div>
-          </Link>
+          </Link> */}
           <Link style={linkStyle} to='/hydration-tracker'>
             <div className='nav-item' id='nav-hydration'>
               <i className='material-icons nav-icon'>water</i>

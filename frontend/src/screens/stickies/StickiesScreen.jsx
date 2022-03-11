@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./StickiesScreen.css";
 import Navbar from "../../components/Navbar";
 import Sticky from "../../components/Sticky";
+import { useNavigate } from "react-router-dom";
 
 const userName = "Haneesh";
 
@@ -19,6 +20,8 @@ const StickiesScreen = () => {
       content: "You can click on delete button to delete a note!",
     },
   ]);
+
+  const navigate = useNavigate();
 
   const defaultSticky = {
     title: "New Note",
@@ -38,7 +41,7 @@ const StickiesScreen = () => {
   }
 
   function editHandler(id) {
-    // NAVIGATE to StickiesEditScreen WITH ALL DATA and ID
+    navigate("/stickies/edit");
     console.log(id);
   }
 
