@@ -26,6 +26,7 @@ body {
   border-radius: 20px;
   transition: all 200ms;
   cursor: pointer;
+  user-select: none;
 }
 
 .nav-home:hover {
@@ -85,7 +86,7 @@ body {
 }
 
 #nav-pomodoro:hover {
-  background-color: rgb(235, 89, 240);
+  background-color: rgb(240, 89, 89);
 }
 
 #nav-diary:hover {

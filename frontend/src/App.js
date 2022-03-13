@@ -10,6 +10,7 @@ import StickiesScreen from "./screens/stickies/StickiesScreen";
 import StickiesEditScreen from "./screens/stickies/StickiesEditScreen";
 import PomodoroScreen from "./screens/pomodoro/PomodoroScreen";
 import HydrationScreen from "./screens/hydration-tracker/HydrationScreen";
+import ToDoEditScreen from "./screens/todolist/ToDoEditScreen";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/register' element={<RegisterScreen />} />
           <Route path='/todolist' element={<ToDoMainScreen />} />
           <Route path='/todolist/tasks' element={<ToDoListScreen />} />
+          <Route path='/todolist/new' element={<ToDoEditScreen />} />
           <Route path='/stickies' element={<StickiesScreen />} />
           <Route path='/stickies/edit' element={<StickiesEditScreen />} />
           <Route path='/pomodoro' element={<PomodoroScreen />} />

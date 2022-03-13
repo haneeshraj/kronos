@@ -2,7 +2,11 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 
 const HydrationScreen = () => {
-  return <Navbar />;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 };
 
 export default HydrationScreen;
