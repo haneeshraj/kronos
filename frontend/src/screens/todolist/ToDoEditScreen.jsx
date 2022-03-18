@@ -5,9 +5,6 @@ import { useNavigate } from "react-router-dom";
 
 const ToDoEditScreen = () => {
   const navigate = useNavigate();
-  const submitHandler = (e) => {
-    e.preventDefault();
-  };
   return (
     <>
       <Navbar />
