@@ -1,3 +1,14 @@
+.ht-weight-container {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
 .ht-container {
   display: flex;
   justify-content: center;
@@ -64,4 +75,34 @@
   align-items: center;
   height: 73.5%;
   flex-wrap: wrap;
+}
+
+.ht-input-weight {
+  padding: 0.3rem 1rem;
+  margin: 1.2rem 0 1.2rem 2.3rem;
+  transition: all 200ms;
+  width: 10rem;
+  height: 2rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.1);
+}
+
+.ht-input-weight:focus-visible {
+  outline: 0;
+}
+
+.ht-weight-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0 14px -1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 23px -5px rgba(0, 0, 0, 0.3);
 }

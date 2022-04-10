@@ -5,10 +5,16 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
 const HydrationScreen = () => {
+
+  let weight = 0;
+
   return (
+
+    
+
     <>
       <Navbar />
-      <div className='ht-container'>
+      {weight ? <>      <div className='ht-container'>
         <div className='ht-box'>
           <h1>HYDRATION TRACKER</h1>
           <div className='ht-content-container'>
@@ -33,7 +39,7 @@ const HydrationScreen = () => {
             </div>
             <div className='ht-right'>
               <p style={{ textAlign: "center" }}>
-                <span style={{ opacity: "0.3" }}>2500ml</span> ~ 4000ml
+                <span style={{ opacity: "0.3", zIndex: "0" }}>2500ml</span> ~ 4000ml
               </p>
               <div className='ht-btns'>
                 <div className='ht-btn'>100ml</div>
@@ -44,7 +50,13 @@ const HydrationScreen = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div></> : <div className="ht-weight-container">
+        <div className="ht-weight-box">
+          <h1 style={{ textAlign: "center" }}>Weight</h1>
+          <input type="text" className="ht-input-weight" />
+        </div>
+      </div> }
+
     </>
   );
 };
